@@ -1,11 +1,11 @@
 module TextHandler
   class FileText
     def self.get_title(header)
-      header.match(/^"As notas do Kindle para:",,,\n^"(.*)",,,/)[1]
+      header.match(/"As notas do Kindle para:",,,\r\n^"(.*)",,,/)[1]
     end
 
     def self.get_authors(header)
-      authors = header.match(/Kindle para:",,,\n.*\n"de (.*)",,,$/)[1]
+      authors = header.match(/Kindle para:",,,\r\n^.*\r\n"de (.*)",,,\r\n$/)[1]
       authors.split(',').map { |author| author.strip }
     end
 

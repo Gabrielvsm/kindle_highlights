@@ -1,6 +1,4 @@
-require 'csv'
 require_relative '../src/modules/file_handler/files'
-require_relative '../src/modules/file_handler/csv'
 
 RSpec.describe 'The file handler' do
   context 'when caling the header extractor' do
@@ -22,7 +20,4 @@ RSpec.describe 'The file handler' do
       File.delete('./file.csv')
     end
   end
-end
-
-RSpec.describe 'The CSV handler' do
 end
