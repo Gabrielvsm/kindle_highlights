@@ -1,8 +1,21 @@
-# Kindle Highlights :books:
-This tool is a personal project that aims to help me automate the process of turning kindle highlights into topics in a markdown file for further use.
+# KindleHighlights
 
-## How to use it :wrench:
-Just use the `ruby` command word followed by the path of the .csv containing the highlights and the path to the .md
-```bash
-ruby src/app.rb <highlights_path> <markdown_path>
+**TODO: Add description**
+
+## Installation
+
+If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+by adding `kindle_highlights` to your list of dependencies in `mix.exs`:
+
+```elixir
+def deps do
+  [
+    {:kindle_highlights, "~> 0.1.0"}
+  ]
+end
 ```
+
+Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
+and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
+be found at <https://hexdocs.pm/kindle_highlights>.
+
