@@ -1,21 +1,11 @@
-# KindleHighlights
+# KindleHighlights :bookmark_tabs:
 
-**TODO: Add description**
+Tool built to automate my process of processing exported kindle highlights into markdown topics for further use.
+Also built as a study on Elixir development.
 
-## Installation
+## The way it works :gear:
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `kindle_highlights` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:kindle_highlights, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/kindle_highlights>.
-
+FileHandler modules manage manipulations on files: extracting headers, file lines, saves the processed
+anotations on the .md file, etc.
+TextHandler modules on the other hand process the data extracted by the FileHandlers: extracts the book title and author(s)
+and processes the highlights and notes from the lines.
