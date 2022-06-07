@@ -2,7 +2,7 @@ defmodule TextHandler.Markdown do
   def row_to_topic(row) do
     [type | row] = row
     [position | row] = row
-    [text | row] = row
+    [text | _] = row
 
     "- (#{which_type type}) #{position}: #{text}"
   end
