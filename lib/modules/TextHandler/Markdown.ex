@@ -1,4 +1,10 @@
 defmodule TextHandler.Markdown do
+  def markdown_header({title, authors_list}) do
+    authors_string = Enum.map_join(authors_list, " ", &("##{String.replace &1, " ", "_"}"))
+
+    "# #{title}\nAuthors: #{authors_string}\n---"
+  end
+
   def row_to_topic(row) do
     [type | row] = row
     [position | row] = row
