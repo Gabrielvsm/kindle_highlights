@@ -18,7 +18,7 @@ defmodule FileHandlerTestHelper do
     path
   end
 
-  def delete_file(path) do
+  def delete_file(path \\ "./csv_tst.csv") do
     File.rm! path
   end
 end

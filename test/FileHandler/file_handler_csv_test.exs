@@ -18,6 +18,6 @@ defmodule FileHandlerCsvTest do
     """
     
     assert FileHandler.Csv.header_from_csv(state[:file]) == expected_header
-    File.rm! "./csv_tst.csv"
+    FileHandlerTestHelper.delete_file
   end
 end
