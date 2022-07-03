@@ -9,3 +9,10 @@ FileHandler modules manage manipulations on files: extracting headers, file line
 anotations on the .md file, etc.
 TextHandler modules on the other hand process the data extracted by the FileHandlers: extracts the book title and author(s)
 and processes the highlights and notes from the lines.
+
+## Running it :runner:
+
+To convert the csv highlights file you simply run the app passing the `<source_file>` and `<destination_file>`, those being, respectively, the .csv and the .md
+```bash
+> mix run lib/kindle_highlights.ex <source_csv_path> <destination_markdown_path>
+```
