@@ -10,7 +10,7 @@ defmodule TextHandler.Markdown do
     [position | row] = row
     [text | _] = row
 
-    "- (#{which_type type}) #{position}: #{text}"
+    "\n- (#{which_type type}) #{position}: #{text}"
   end
 
   defp which_type(type) do
